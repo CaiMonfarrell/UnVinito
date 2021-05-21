@@ -345,26 +345,6 @@ body {
   margin-bottom: 9rem;
   margin-left: 13%;
   }
-  @media screen and (max-width: 576px){
-  .row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    line-height: 3;
-    margin-top: 3rem;
-    margin-bottom: 9rem;
-    margin-right: 0;
-  }
-  .col-4{
-  margin-top: 3rem;
-  margin-left: 15%;
-}
-  iframe{
-    height: 315px;
-    width: 315px;
-    margin-top: 40px;
-  }
 @media screen and (max-width: 320px){
   .row {
     display: flex;
@@ -380,7 +360,6 @@ body {
     width: 250px;
     margin-top: 40px;
   }
-
   .list-group {
     display: -ms-flexbox;
     display: flex;
@@ -774,4 +753,3 @@ hr{
   margin-bottom:1rem;
   margin-top:0;
 }
-
