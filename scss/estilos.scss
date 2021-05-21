@@ -1,0 +1,352 @@
+@import "variables";
+@import "fuente";
+@import "main";
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  .col-12-body{
+  	padding: 0px;
+	}
+} 
+.header{
+	background: rgba(53,55,60,0.8);
+	display-flex: row;
+    color: #6b5d5c;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    min-height: 70px;
+    .container-fluid{
+    	.logo{
+			height: 30px;
+			font-size: 24px;
+			font-weight: 500;
+			float: left;
+		    margin-top: 18px;
+		    margin-bottom: 0;
+		    width:75px;
+		    a{
+		    	.InicioLogo{
+				width: 75px;
+				border-style: none;
+				vertical-align: middle;}
+		    }
+		}
+		.row{
+			color:#fff;	
+			padding-left: 30px;
+			padding-right: 30px;
+			text-align: center;
+			justify-content: center;
+			/*gap: 45px; averiguar espacio entre los botones*/
+			.navbar{
+				flex-wrap: nowrap;
+    			justify-content: flex-start;
+				padding: 0;
+				position: absolute;
+				display: flex;
+				align-items: center;
+				.navbar-nav{
+					display: flex;
+				    flex-direction: row;
+				    padding-left: 0;
+				    margin-bottom: 0;
+				    list-style: none;
+				    .navbar-nav__1{
+				    	text-decoration: none;
+					}
+				    .navbar-nav__1--especial{
+					    text-decoration: blink;
+				    }
+					   li{
+
+						padding-top: 25px;
+						padding-left:15px;
+						padding-right: 15px;
+						text-align:center;
+						color:#fff;
+						a{
+							color:#fff;
+							.nav-link{
+								transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;}
+							}
+							div{
+								a{
+									font-weight:normal;
+									text-transform: uppercase;
+									font-size: 12px;
+									color:#fff;
+								}
+							}			
+						}			
+				} 	
+			}
+		}
+	}
+}
+
+.text-white-50 {
+	color: white !important;
+}
+
+/****************************SECCION BODEGA****************************/
+.contenedorBodega{
+	align-items: stretch;
+	margin-top: 80px;
+	margin-left: 15px;
+	margin-right: 15px;
+	.card{
+		border:1px solid #541313;
+		border-radius:15px;
+		.card-img-top{
+			filter: brightness(0.8);
+		}
+		.card-body{
+			background:#541313;
+			color:#fff;
+			a{
+				text-decoration: none;
+				color: white;
+			}
+		}	
+	}
+}
+.contenedorBodega2{
+	margin-top: 15px;
+	display: block;
+	margin-bottom: 25px;
+	margin-right: 15px;
+	margin-left: 15px;
+	.card{
+		border-radius:15px;
+		.card-img-top{
+				filter: brightness(0.8);
+		}
+		.card-body{
+		background:#541313;
+		color:#fff;
+			a{
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+} 
+/*---------------------BEM--------------------
+.carousel{
+	.carousel__1{
+		color:red;
+		text-decoration:underline;
+	}
+	.carousel__1--especial{
+		color:yellow;
+		text-decoration: blink;
+	}
+} *///
+/*---------------------------Seccion Mapa----------------------------*/
+.contenedor-mapa{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	.mapa-derecha{
+		height: 400px;
+		width: 15%;
+		margin-right: 190px;
+		margin-top: 40px;
+		.btn-space{
+			margin:15px;
+			border-radius:10px;
+		}
+	}
+	.mapa-izquierda iframe{
+		margin-left: 90px;
+    	margin-top: 80px;
+    	padding-bottom: 20px;
+	}
+}
+/**********************************CONTACTO***************************************/
+.consulta{
+	height:100px;
+}
+.jumbotron{
+	margin-top:50px;
+	margin-bottom: 0;
+    background-color: #e9ecef;
+	.container{
+		text-align:center;
+		fieldset{
+			margin-top:45px;}
+		.encuesta{
+			margin-top:45px;
+		}
+	}
+}
+.btn-danger{
+	color:#fff;
+	background-color:#b77077;
+}
+.btn-primary{
+	color:#fff;
+	background-color: #4b74a1;
+}
+/*******************************RESTAURANTES-HOTELERÍA****************************/
+*, {
+	box-sizing:border-box;
+}
+
+
+.contenedorRestaurante{
+	margin-top: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+	.card{
+		border:1px solid #541313;
+		border-radius:15px;
+		.card-img-top{
+			filter: brightness(0.8);
+		}
+		.card-body{
+			background:#541313;
+			color:#fff;
+			a{
+				text-decoration: none;
+				color: white;
+			}
+		}	
+	}
+}
+.contenedorRestaurante2{
+	margin-top: 15px;
+	display: block;
+	margin-bottom: 25px;
+	margin-right: 15px;
+	margin-left: 15px;
+	.card{
+		border-radius:15px;
+		.card-img-top{
+				filter: brightness(0.8);
+		}
+		.card-body{
+		background:#541313;
+		color:#fff;
+			a{
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+} 
+/**
+.margen {
+	margin-top: 11vh;
+	background-image: url("img/restaurante.jpg");
+	background-repeat: no-repeat;
+	width: 100vw;
+	display: block;
+	height: 40vh;
+}
+.vinedo4{
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+}
+.conteiner-restaurante{
+	max-width:1248px;
+	.text-restaurante{
+	   margin:0;
+	   max-width: 801px;
+	   width:100%;
+	   position: relative;
+	   background-image: url("img/restaurante.jpg");
+		background-repeat: no-repeat;
+	   .h1{
+	    	margin: 0;
+	    	padding: 0;
+	    	font-family:$font;
+	    	line-height:1.2;
+	    	color:#fff;
+	    }
+	    p{
+	    	display: block;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+		}
+	}
+}
+**/
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10.5vh;
+}
+.contenedortexto{
+	font-family: $font-bold;
+	position: absolute;
+    color: white;
+    position: absolute;
+    top: 260px;
+    left: 360px;
+    transform: translate(-50%, -50%);
+    color: white;
+    .restaurante{
+    	top: 55px;
+    	left: 10px;
+    	font-size: 47px;
+    }
+    .parrafo{
+    	font-size: 21px;
+    }
+}
+.imagen{
+	width:100%;
+	height: 350px;
+	background-size: cover;
+	filter: brightness(0.5)
+}
+/**********************************FOOTER*****************************************/
+
+*,{
+	box-sizing: border-box;}
+.footer{
+	color:#fff;
+	background: #09101c;
+	display: block;
+	overflow: hidden;
+	.container{
+		padding:75px 50px 25px 0;
+		color:#fff;
+		border: 1px solid transparent;
+		.footer-links{
+			line-height: 2.2em;
+			display-flex: row;
+			justify-content:between; 
+		}
+		a{
+			color:#fff;
+			text-decoration: none;
+		}
+		.img-fluid{
+			width: 75px;
+			padding-left: 0.5px;
+		}
+		.botonwspp {
+		 	position: fixed;
+		  	bottom: 3px;
+		  	right: 5px;
+		  	height: 7%;
+			:hover{
+				transform: scale(1.1);
+			}
+		}	 
+	}	
+}

@@ -1,0 +1,756 @@
+@charset "UTF-8";
+@import url ('https://fonts.googleapis.com/css2? family = Merienda & display = swap');
+/* line 2, ../../../../../OneDrive/Documentos/Proyecto 151/scss/_fuente.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.col-12-body{
+  padding: 0px;
+}
+/* line 4, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  background-color: #343a40de;
+}
+.navbar .navbar-brand img {
+    height: 10vh;
+    width: 5vw;
+    margin-left: 4vw;
+}
+@media screen and (max-width: 320px){
+  .navbar .navbar-brand img {
+    height: 10vh;
+    width: 15vw;
+    margin-left: 4vw;
+  }
+  .navbar{
+    background-color: #343a40de;
+    position: sticky;
+  }
+  .navbar-restaurante{
+    position: fixed;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 4vw;
+    font-weight:bold;
+}
+.navbar-nav a {
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #95b2d1, transparent);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.navbar-nav a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+/***************carousel******************************/
+
+.carousel-inner .active .d-md-block{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom:400px; 
+}
+.carousel-inner .active img{
+  filter: brightness(0.6);
+}
+.carousel-inner .active .d-md-block h5{
+  font-size: 40px;
+  animation: 6s;
+  animation-name: aparecer;
+}
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.carousel-inner .active .d-md-block p{
+  font-size: 25px;
+  animation: 8s;
+  animation-name: aparecer;
+}
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} 
+.fondonegro{
+  font-family: 'Merienda', cursiva;
+  background-image:url("../img/fondonegro.jpg");
+  filter: brightness(0.9);
+  height: 70vh;
+  width: 100vw;
+  color:#bdbfc2;
+  padding: 3%;
+}
+.fondonegro h2{
+  font-family: 'Merienda', cursiva;
+  padding: :3%;
+  color: #3a3d4a;
+  margin-bottom: 2rem;
+}
+
+.fondonegro .parrafo1{
+  font-family: 'Merienda', cursiva;
+  color: #bdbfc2;
+  margin-top: 0;
+}
+@media screen and (max-width: 936px){
+  .fondonegro{
+    height: 40vh;
+  }
+  .fondonegro .parrafo2{
+    display: none;
+  }
+  .fondonegro .parrafo3{
+    display: none;
+  }
+  .fondonegro .parrafo4{
+    display: none;
+  }
+}
+/* line 87, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.text-white-50 {
+  color: white !important;
+}
+
+/****************************SECCION BODEGA****************************/
+/* line 92, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega {
+  align-items: stretch;
+  margin-top: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 320px){
+.contenedorBodega {
+    align-items: stretch;
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+
+/* line 97, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega .card {
+  border: 1px solid #541313;
+  border-radius: 15px;
+}
+.contenedorBodega .card {
+  border: 1px solid #541313;
+  border-radius: 15px;
+  width: 330px;
+  height: 430px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.contenedorBodega .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* line 100, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega .card .card-img-top {
+  filter: brightness(0.8);
+}
+
+/* line 103, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega .card .card-body {
+  background: #541313;
+  color: #fff;
+}
+
+/* line 106, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega .card .card-body a {
+  text-decoration: none;
+  color: white;
+}
+.contenedorBodega .card .card-body .card-title {
+  margin-bottom: .75rem;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+}
+.contenedorBodega .card .card-body p {
+  text-align: center; 
+}
+/* line 113, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega2 {
+  margin-top: 15px;
+  display: block;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 320px){
+  .contenedorBodega2 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 0px;
+    }
+}
+
+/* line 119, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega2 .card {
+  border-radius: 15px;
+  border: 1px solid #541313;
+}
+.contenedorBodega2 .card {
+  border: 1px solid #541313;
+  border-radius: 15px;
+  width: 330px;
+  height: 430px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.contenedorBodega2 .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+/* line 121, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega2 .card .card-img-top {
+  filter: brightness(0.8);
+}
+
+/* line 124, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega2 .card .card-body {
+  background: #541313;
+  color: #fff;
+}
+
+/* line 127, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega2 .card .card-body a {
+  text-decoration: none;
+  color: white;
+}
+.contenedorBodega2 .card .card-body .card-title {
+  margin-bottom: .75rem;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+}
+.contenedorBodega2 .card .card-body p {
+  text-align: center; 
+}
+.contenedorBodega3 {
+  margin-top: 15px;
+  display: block;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 320px){
+  .contenedorBodega3 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 0px;
+  }
+}
+/* line 119, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega3 .card {
+  border-radius: 15px;
+  border: 1px solid #541313;
+}
+.contenedorBodega3 .card {
+  border: 1px solid #541313;
+  border-radius: 15px;
+  width: 330px;
+  height: 430px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.contenedorBodega3 .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* line 121, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega3 .card .card-img-top {
+  filter: brightness(0.8);
+}
+
+/* line 124, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega3 .card .card-body {
+  background: #541313;
+  color: #fff;
+}
+
+/* line 127, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedorBodega3 .card .card-body a {
+  text-decoration: none;
+  color: white;
+}
+.contenedorBodega3 .card .card-body .card-title {
+  margin-bottom: .75rem;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+}
+.contenedorBodega3 .card .card-body p {
+  text-align: center; 
+}
+/*---------------------------Seccion Mapa----------------------------*/
+/* line 146, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.body-mapa{
+  background-image: url("../img/vinedo6.jpg");
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 3;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  margin-left: 13%;
+  }
+@media screen and (max-width: 320px){
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 3;
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+  }
+  iframe{
+    height: 250px;
+    width: 250px;
+    margin-top: 40px;
+  }
+  .list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: .25rem;
+    width: 200px;
+    margin-left: 20px;
+  }
+}
+.col-4{
+  margin-top: 5rem;
+}
+.list-group .list-group-item{
+  margin:5px;
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  background-color: #e4e3ff;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius:20px;
+}
+.list-group a{
+  border: 1px solid color-black;
+  border-radius: 10px;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #9eace3;
+    border-color: #223e5c;
+}
+/**********************************CONTACTO***************************************/
+
+.fondo-contacto{
+  background-image: url("../img/Bodega.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin:0;
+  margin-top: 10%;
+  background-size: cover;
+}
+@media screen and (max-width: 576px){
+  .fondo-contacto{
+  background-image: url("../img/Bodega.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin:0;
+  margin-top: 25%;
+  background-size: cover;
+  }
+}
+@media screen and (max-width: 320px){
+  .fondo-contacto{
+  background-image: url("../img/Bodega.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin-top:0;
+  background-size: cover;
+  }
+}
+
+
+form{
+  width: 450px;
+  margin: auto;
+  background: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top:20px;
+  border-radius: 7px;
+}
+form .titulo-contacto{
+  color: #fff;
+  text-align: center;
+  margin:0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+form input, textarea{
+  width:100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing:border-box;
+  font-size: 17px;
+}
+form textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+#boton{
+  font-family: 'Merienda', cursiva;
+  background:#8a710c;
+  color: #fff;
+  padding:10px;
+  border-color:#000000;
+  margin-left: 10rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #50526e;
+    border-color: black;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #836f1a;
+    border-color: #1b232a;
+}
+@media screen and (max-width: 480px){
+  form{
+    width: 100%;
+  }
+}
+
+.formulario{
+  margin-bottom: 15%;
+  margin-top: 10%;
+}
+@media screen and (max-width: 320px){
+  .formulario{
+    margin-top:100px;
+  }
+}
+.formulario h2{
+  font-family: 'Merienda', cursiva;
+}
+
+.modal .modal-header {
+  background-color: #e0e4ea;
+}
+.modal .modal-header h5 {
+  margin-left: 5vw;
+}
+.modal-content .modal-body p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 9vw;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #9ab3cf;
+    border-color: #a4aeb8;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgb(18 19 20/ 50%); 
+}
+/*******************************RESTAURANTES-HOTELERÍA****************************/
+/* line 194, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 199, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards {
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* line 203, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards .card {
+  border: 1px solid #541313;
+  border-radius: 15px;
+  width: 330px;
+  height: 430px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.contenedor-cards .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* line 206, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards .card .card-img-top {
+  filter: brightness(0.8);
+}
+
+/* line 209, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards .card .card-body {
+  background: #541313;
+  color: #fff;
+}
+
+/* line 212, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards .card .card-body a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 219, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards2 {
+  margin-top: 15px;
+  display: block;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* line 225, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards2 .card {
+  border-radius: 15px;
+  border: 1px solid #541313;
+}
+
+/* line 227, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards2 .card .card-img-top {
+  filter: brightness(0.8);
+}
+
+/* line 230, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards2 .card .card-body {
+  background: #541313;
+  color: #fff;
+}
+
+/* line 233, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-cards2 .card .card-body a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 280, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedor-restaurante {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 286, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedortexto {
+  font-family: 700;
+  position: absolute;
+  color: white;
+  position: absolute;
+  top: 260px;
+  left: 360px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* line 295, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.contenedortexto .restaurante {
+  top: 55px;
+  left: 10px;
+  font-size: 47px;
+}
+
+/* line 300, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.card-text {
+  font-size: 17px;
+}
+.card-title{
+  font-size: 25px;
+}
+
+/* line 304, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.imagen {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  filter: brightness(0.5);
+}
+@media screen and (max-width: 320px){
+  .imagen{
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 550px){
+  .imagen{
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 320px){
+  .contenedortexto .restaurante {
+    top:50vh;
+  }
+}
+@media screen and (max-width: 320px){
+  .contenedortexto .parrafo {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-right: 18rem;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .contenedortexto {
+    left: 0px;
+      }
+}
+
+@media screen and (max-width: 550px){
+  .contenedortexto {
+    display: flex;
+    flex-direction: column;
+    top:30vh;
+    left:50vw;
+      }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* line 314, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+.img-fondonegro{
+  width: 100vw;
+  height: 50vh;
+}
+.footer {
+  color: #fff;
+  background: #020001;
+  display: block;
+}
+
+.container-footer{
+  width: 100%;
+}
+.container-footer footer .logo-footer{
+  text-align: center;
+}
+.container-footer footer .logo-footer img{
+  height: 60px;
+  width: 60px;
+  margin-top:20px;
+}
+@media screen and (max-width: 320px){
+   .container-footer footer .logo-footer img {
+    height: 1px;
+    width: 60px;
+    margin-top: 20px;
+    }
+}
+.container-footer footer .redes-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.container-footer footer .redes-footer img{
+  font-size: 20px;
+  margin: 20px;
+  background:#efefef;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:100%;
+  color:#a2a2a2;
+  cursor: pointer;
+}
+
+.container-footer footer .redes-footer .facebook:hover{
+  background-color: #41579A;
+  color: #fff;
+}
+.container-footer footer .redes-footer .whatsapp:hover{
+  background-color: #3c8936;
+  color: #fff;
+}
+
+.container-footer footer .redes-footer .instagram:hover{
+  background: linear-gradient(to top right, #FCDE30, #E9712A, #D23138, #AE4198, #7540A1, #5443A8);
+  color: #fff;
+}
+h4{
+  margin:0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight:500px;
+}
+hr{
+  background-color: #efefef;
+  height:2px;
+  border:none;
+  margin-bottom:1rem;
+  margin-top:0;
+}
+
