@@ -2,6 +2,8 @@
 @import url ('https://fonts.googleapis.com/css2? family = Merienda & display = swap');
 /* line 2, ../../../../../OneDrive/Documentos/Proyecto 151/scss/_fuente.scss */
 body {
+  width: 100%;
+  height:100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -23,7 +25,7 @@ body {
 }
 @media screen and (max-width: 320px){
   .navbar .navbar-brand img {
-    height: 10vh;
+    height: 7vh;
     width: 15vw;
     margin-left: 4vw;
   }
@@ -32,10 +34,46 @@ body {
     position: sticky;
   }
   .navbar-restaurante{
-    position: fixed;
+    position: sticky;
   }
 }
-
+@media screen and (max-width: 375px){
+  .navbar{
+    height: 6rem;
+  }
+  .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #343a40;
+    width: 100vw;
+    height: 10rem;
+  }
+  .navbar .navbar-brand img {
+    height: 7vh;
+    width: 15vw;
+    margin-left: 4vw;
+  }
+  .navbar{
+    background-color: #343a40;
+    position: sticky;
+  }
+  .navbar-restaurante{
+    position: sticky;
+  }
+}
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100vw;
+}
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
     margin-right: 4vw;
@@ -106,7 +144,15 @@ body {
   color: #3a3d4a;
   margin-bottom: 2rem;
 }
-
+@media screen and (max-width: 375px){
+  .fondonegro h2 {
+    margin-top: 4rem;
+    font-family: 'Merienda', cursiva;
+    padding-top: :3%;
+    color: #3a3d4a;
+    margin-bottom: 2rem;
+  }
+}
 .fondonegro .parrafo1{
   font-family: 'Merienda', cursiva;
   color: #bdbfc2;
@@ -139,15 +185,16 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
-@media screen and (max-width: 320px){
-.contenedorBodega {
-    align-items: stretch;
-    margin-top: 80px;
-    margin-left: 0px;
-    margin-right: 15px;
-    display: flex;
-    justify-content: center;
-    }
+@media screen and (max-width: 375px){
+  .contenedorBodega {
+  width: 100%;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 0px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  }
 }
 
 
@@ -207,15 +254,28 @@ body {
   margin-right: 15px;
   margin-left: 15px;
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 375px){
   .contenedorBodega2 {
-    margin-top: 15px;
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
-    margin-right: 15px;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
     margin-left: 0px;
-    }
+    margin-right: 15px;
+  }
+  .contenedorBodega2 .card {
+    border: 1px solid #541313;
+    border-radius: 15px;
+    width: 330px;
+    height: 430px;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    transition: all 0.25s;
+    margin-right: 0px;
+  }
 }
 
 /* line 119, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
@@ -271,6 +331,29 @@ body {
   margin-bottom: 25px;
   margin-right: 15px;
   margin-left: 15px;
+}
+@media screen and (max-width: 375px){
+  .contenedorBodega3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  .contenedorBodega3 .card {
+    border: 1px solid #541313;
+    border-radius: 15px;
+    width: 330px;
+    height: 430px;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    transition: all 0.25s;
+    margin-right: 0px;
+  }
 }
 @media screen and (max-width: 320px){
   .contenedorBodega3 {
@@ -345,15 +428,19 @@ body {
   margin-bottom: 9rem;
   margin-left: 13%;
   }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 375px){
+  .col-4{
+    margin-top: 0px;
+  }
   .row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     line-height: 3;
-    margin-top: 3rem;
-    margin-bottom: 9rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    margin-right: 3rem;
   }
   iframe{
     height: 250px;
@@ -368,10 +455,9 @@ body {
     padding-left: 0;
     margin-bottom: 0;
     border-radius: .25rem;
-    width: 200px;
-    margin-left: 20px;
+    width: 15rem;
   }
-}
+} 
 .col-4{
   margin-top: 5rem;
 }
@@ -404,13 +490,13 @@ body {
   margin-top: 10%;
   background-size: cover;
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 375px){
   .fondo-contacto{
   background-image: url("../img/Bodega.jpg");
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin:0;
-  margin-top: 25%;
+  margin-top: 0;
   background-size: cover;
   }
 }
@@ -524,6 +610,15 @@ form textarea{
   margin-left: 15px;
   margin-right: 15px;
 }
+@media screen and (max-width: 375px){
+  .contenedor-cards {
+    margin-top: 50px;
+    display: block;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 /* line 203, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
 .contenedor-cards .card {
   border: 1px solid #541313;
@@ -567,7 +662,15 @@ form textarea{
   margin-right: 15px;
   margin-left: 15px;
 }
-
+@media screen and (max-width: 375px){
+  .contenedor-cards2 {
+    margin-top: 15px;
+    display: block;
+    margin-bottom:0; 
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 /* line 225, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
 .contenedor-cards2 .card {
   border-radius: 15px;
@@ -609,6 +712,20 @@ form textarea{
   transform: translate(-50%, -50%);
   color: white;
 }
+@media screen and (max-width: 375px){
+  .contenedortexto {
+    display: flex;
+    flex-direction: column;
+    top:9vh;
+    left:50vw;
+  }
+  .contenedortexto .restaurante {
+    top: 55px;
+    left: 10px;
+    font-size: 30px;
+  }
+}
+
 
 /* line 295, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
 .contenedortexto .restaurante {
@@ -632,16 +749,11 @@ form textarea{
   background-size: cover;
   filter: brightness(0.5);
 }
-@media screen and (max-width: 320px){
+
+@media screen and (max-width: 375px){
   .imagen{
     width: 100%;
-    height: 200px;
-  }
-}
-@media screen and (max-width: 550px){
-  .imagen{
-    width: 100%;
-    height: 200px;
+    height: 150px;
   }
 }
 @media screen and (max-width: 320px){
@@ -668,9 +780,9 @@ form textarea{
   .contenedortexto {
     display: flex;
     flex-direction: column;
-    top:30vh;
+    top:9vh;
     left:50vw;
-      }
+  }
 }
 
 * {
