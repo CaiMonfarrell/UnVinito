@@ -415,8 +415,17 @@ body {
 }
 /*---------------------------Seccion Mapa----------------------------*/
 /* line 146, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
-.body-mapa{
-  background-image: url("../img/vinedo6.jpg");
+
+
+
+.fondo-mapa{
+  background-image: url("../img/mapa.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin:0;
+  background-size: cover;
 }
 .row {
   display: flex;
