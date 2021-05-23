@@ -144,9 +144,17 @@ body {
   color: #3a3d4a;
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 375px){
+@media screen and (min-width: 321px) and (max-width: 375px){
   .fondonegro h2 {
     margin-top: 4rem;
+    font-family: 'Merienda', cursiva;
+    padding-top: :3%;
+    color: #3a3d4a;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 320px){
+  .fondonegro h2 {
     font-family: 'Merienda', cursiva;
     padding-top: :3%;
     color: #3a3d4a;
