@@ -65,6 +65,34 @@ body {
     position: sticky;
   }
 }
+@media screen and (min-width: 376px) and (max-width: 767px){
+  .navbar{
+    height: 5rem;
+  }
+  .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #343a40;
+    width: 100vw;
+    height: 10rem;
+  }
+  .navbar .navbar-brand img {
+    height: 10vh;
+    width: 10vw;
+    margin-left: 4vw;
+  }
+  .navbar{
+    background-color: #343a40;
+    position: sticky;
+  }
+  .navbar-restaurante{
+    position: sticky;
+  }
+}
 .navbar-collapse {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -143,10 +171,24 @@ body {
   padding: :3%;
   color: #3a3d4a;
   margin-bottom: 2rem;
+  margin-top: 4vh;
+}
+@media screen and (min-width: 376px) and (max-width: 767px){
+  .fondonegro{
+    height: 60vh;
+  }
+  .fondonegro h2 {
+    margin-top: 1rem;
+    font-family: 'Merienda', cursiva;
+    padding-top: :3%;
+    color: #3a3d4a;
+    margin-bottom: 2rem;
+  }
+}
 }
 @media screen and (min-width: 321px) and (max-width: 375px){
   .fondonegro h2 {
-    margin-top: 4rem;
+    margin-top: 7rem;
     font-family: 'Merienda', cursiva;
     padding-top: :3%;
     color: #3a3d4a;
@@ -166,7 +208,19 @@ body {
   color: #bdbfc2;
   margin-top: 0;
 }
-@media screen and (max-width: 936px){
+@media screen and (min-width: 371px) and (max-width: 767px){
+  .fondonegro{
+    height:75vh;
+  }
+  .fondonegro .parrafo3{
+    display: none;
+  }
+  .fondonegro .parrafo4{
+    display: none;
+  }
+}
+}
+@media screen and (max-width: 375px){
   .fondonegro{
     height: 40vh;
   }
@@ -180,6 +234,7 @@ body {
     display: none;
   }
 }
+
 /* line 87, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
 .text-white-50 {
   color: white !important;
@@ -189,7 +244,7 @@ body {
 /* line 92, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
 .contenedorBodega {
   align-items: stretch;
-  margin-top: 80px;
+  margin-top: 100px;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -207,9 +262,18 @@ body {
 
 
 /* line 97, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
-.contenedorBodega .card {
-  border: 1px solid #541313;
-  border-radius: 15px;
+@media screen and (min-width: 376px) and (max-width: 767px){
+  .contenedorBodega .card {
+    border: 1px solid #541313;
+    border-radius: 15px;
+    width: 330px;
+    height: 430px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 3%;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+  }
 }
 .contenedorBodega .card {
   border: 1px solid #541313;
@@ -218,7 +282,6 @@ body {
   height: 430px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
   text-align: center;
   transition: all 0.25s;
 }
@@ -261,6 +324,25 @@ body {
   margin-bottom: 25px;
   margin-right: 15px;
   margin-left: 15px;
+}
+@media screen and (min-width: 376px) and (max-width: 767px){
+  .contenedorBodega2 {
+    margin-top: 15px;
+    display: block;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .contenedorBodega2 .card {
+    border: 1px solid #541313;
+    border-radius: 15px;
+    width: 330px;
+    height: 430px;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+  }
 }
 @media screen and (max-width: 375px){
   .contenedorBodega2 {
@@ -346,7 +428,7 @@ body {
     justify-content: center;
     width: 100%;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 0px;
     margin-right: 15px;
   }
@@ -445,6 +527,40 @@ body {
   margin-bottom: 9rem;
   margin-left: 13%;
   }
+@media screen and (min-width: 376px) and (max-width: 767px){
+    .col-4{
+    margin-top: 0px;
+    margin-left: 5%;
+  }
+  .col-8{
+
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 3;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    margin-right: 3rem;
+  }
+  iframe{
+    height: 300px;
+    width: 300px;
+    margin-top: 40px;
+  }
+  .list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: .25rem;
+    width: 15rem;
+  }
+} 
 @media screen and (max-width: 375px){
   .col-4{
     margin-top: 0px;
@@ -506,6 +622,16 @@ body {
   margin:0;
   margin-top: 10%;
   background-size: cover;
+}
+@media screen and (min-width: 376px) and (max-width: 767px){
+.fondo-contacto{
+  background-image: url("../img/Bodega.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin:0;
+  margin-top: 0;
+  background-size: cover;
+  }
 }
 @media screen and (max-width: 375px){
   .fondo-contacto{
@@ -679,6 +805,15 @@ form textarea{
   margin-right: 15px;
   margin-left: 15px;
 }
+@media screen and (min-width: 376px) and (max-width: 767px){
+  .contenedor-cards2 {
+    margin-top: 15px;
+    display: block;
+    margin-bottom:0; 
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 375px){
   .contenedor-cards2 {
     margin-top: 15px;
@@ -760,13 +895,27 @@ form textarea{
 }
 
 /* line 304, ../../../../../OneDrive/Documentos/Proyecto 151/scss/estilos.scss */
+@media screen and (min-width: 376px) and (max-width: 767px){
+  .contenedor-restaurante .imagen {
+    width: 100%;
+    height: 9rem;
+    background-size: cover;
+    filter: brightness(0.5);
+  }
+  .contenedortexto {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    top: 9vh;
+    left: 50vw;
+  }
+}
 .imagen {
   width: 100%;
   height: 350px;
   background-size: cover;
   filter: brightness(0.5);
 }
-
 @media screen and (max-width: 375px){
   .imagen{
     width: 100%;
@@ -793,14 +942,6 @@ form textarea{
       }
 }
 
-@media screen and (max-width: 550px){
-  .contenedortexto {
-    display: flex;
-    flex-direction: column;
-    top:9vh;
-    left:50vw;
-  }
-}
 
 * {
   box-sizing: border-box;
